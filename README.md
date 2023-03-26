@@ -33,3 +33,31 @@ This dataset consists of below metadata information:
 |             File Format              |    csv   |
 
 
+## Tools 
+
+Below tools have been utilized for the various segments involving Data Profiling, Modeling, Integration and BI Reporting and Visualizations:
+
+<p align="center">  
+    <br>
+	<a href="#">
+        <img height=100 src="img/erstudio.png" alt="ER/Studio" title="ER/Studio" hspace=80> 
+  </a>	
+ 	<a href="#">
+        <img height=100 src="img/alteryx.png" alt="Alteryx" title="Alteryx" hspace=80> 
+  </a>
+    <br>
+</p>
+<br>
+<p align="center">  
+    <br>
+	<a href="#">
+        <img height=100 src="img/mssqlserver.jpg" alt="Microsoft SQL Server" title="Microsoft SQL Server" hspace=80> 
+  </a>	
+ 	<a href="#">
+        <img height=100 src="img/powerbi.png" alt="Power BI" title="Power BI" hspace=80> 
+  </a>
+  	<a href="#">
+        <img height=100 src="img/tableau.png" alt="Tableau" title="Tableau" hspace=80> 
+  </a>
+    <br>
+</p>
