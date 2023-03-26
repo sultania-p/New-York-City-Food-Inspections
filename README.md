@@ -27,7 +27,7 @@ https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-R
 This dataset consists of below metadata information:
 |              Metadata                |   Value  |
 |:------------------------------------:|:--------:|
-|               Rows                   |    206K  |
+|               Rows                   |    240K  |
 |             Columns                  |     27   |
 |          Update Frequency            |   Daily  |
 |             File Format              |    csv   |
@@ -51,7 +51,7 @@ Below tools have been utilized for the various segments involving Data Profiling
 <p align="center">  
     <br>
 	<a href="#">
-        <img height=100 src="img/mssqlserver.jpg" alt="Microsoft SQL Server" title="Microsoft SQL Server" hspace=80> 
+        <img height=100 src="img/mssqlserver-modified.png" alt="Microsoft SQL Server" title="Microsoft SQL Server" hspace=80> 
   </a>	
  	<a href="#">
         <img height=100 src="img/powerbi.png" alt="Power BI" title="Power BI" hspace=80> 
