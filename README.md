@@ -79,12 +79,66 @@ This project leverages the capability of ER/Studio Data Architect to design, vis
 <p align="center">  
   <br>
 	<a href="#">
-        <img src="img/dim_model.png"> 
+        <img src="img/dim_model.jpg"> 
   </a>		
     <br>
-	Figure 1 : New York City Food Inspection Dimensional Data Model
+	Figure 2 : New York City Food Inspection Dimensional Data Model
 </p>
 
-## Data Integration
+## Data Integration / ETL Pipeline
 
 In this project, data is analysed, profiled, transformed and loaded into Microsoft SQL server by Alteryx. Data is collected in the form of flat files (csv/tsv) and is moved to landing zones (Stage) in SQL Server.
+
+The ETL process involved 2 layer of data landing, transformation and loading.
+- **Landing or Staging Data Layer**: The data is extracted form source and staged into the SQL Server database. Here the main focus is to land the data from source without minimal transformation (as-is data load). Also, ETL Audit fields such as DI_FILENAME, DI_WORKFLOWNAME, DI_CREATEDATE etc. were added to identify newly loaded or updated records by using audit columns.
+
+	|              Schema                  |             Table  	   |
+	|:------------------------------------:|:-------------------------:|
+	|               NYC_INS                |    STG_NYC_FOOD_ESTD_INS  |
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/stage_load.jpg"> 
+  </a>		
+    <br>
+	Figure 3 : New York City Food Inspection Staging Workflow
+</p>
+<br>
+	
+- **Dimensional Data Layer**: Data is loaded to multi-fact dimensional data warehouse after performing extraction from Stage and transformation with defined rules and performed data quality checks post data load. I also addded DI attributes (audit columns) to each dimension and fact for record audit and maintenance.
+
+	|              Schema                  |             Table  	   |
+	|:------------------------------------:|:-------------------------:|
+	|               NYC_INS                |    Dim_NYC_Addresses  |
+	|               NYC_INS                |    Dim_NYC_Borough  |
+	|               NYC_INS                |    Dim_NYC_Critical_Flag  |
+	|               NYC_INS                |    Dim_NYC_Cuisine  |
+	|               NYC_INS                |    Dim_NYC_Inspection_Actions  |
+	|               NYC_INS                |    Dim_NYC_Inspection_Grades  |
+	|               NYC_INS                |    Dim_NYC_Inspection_Type  |
+	|               NYC_INS                |    Dim_NYC_Food_Places
+	|               NYC_INS                |    Dim_NYC_Violation_Codes  |
+	|               NYC_INS                |    FCT_NYC_Food_Inspections  |
+	|               NYC_INS                |    FCT_NYC_FoodInspection_Violations  |
+<br>
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/dim_load.jpg">
+  </a>		
+    <br>
+	Figure 4 : New York City Food Inspection Dimensional Workflow (Dimension Container)
+</p>
+<br>
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/fact_load.jpg">
+  </a>		
+    <br>
+	Figure 5 : New York City Food Inspection Dimensional Workflow (Fact Container) 
+</p>
+<br>
+
+## BI Reporting
+
