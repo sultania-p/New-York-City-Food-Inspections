@@ -35,7 +35,8 @@ This dataset consists of below metadata information:
 
 ## Tools 
 
-I have used below tools for the project:
+Below tools have been utilized for the various segments involving Data Profiling, Modeling, Integration and BI Reporting and Visualizations:
+
 <p align="center">  
     <br>
 	<a href="#">
