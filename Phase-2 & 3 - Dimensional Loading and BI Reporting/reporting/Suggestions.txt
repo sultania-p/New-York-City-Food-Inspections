@@ -1,0 +1,10 @@
+- Avergae Score
+- Show Fail and Pass based on Baseline avergae score
+
+
+-> Chicago Data Set
+- Line graph for timeline
+- Restaunrants - Inspections and Violations (DBA wise)
+- 
+
+
