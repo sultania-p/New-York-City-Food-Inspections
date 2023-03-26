@@ -142,4 +142,41 @@ The ETL process involved 2 layer of data landing, transformation and loading.
 
 ## BI Reporting
 
+BI reporting—preparing, analyzing, and portraying business metrics is fundamental to every business. The goal of BI reporting is to provide data insights to support decision making. This project leverages the potential of Power BI and Tableau to derive key business insights by identifying key measurements such as Satisfaction level and apply dimensions such as Inspection date, Restaurant and Violation Code information. The BI reports and dashboards developed as part of this project serves the purpose of identifying the violations in health norms and regulations at restaurants and cafeterias in New York City. Some of the snapshots of the dashboards are attached below:
 
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/bi-1.jpg">
+  </a>		
+    <br>
+	Figure 6 : Executive Summary Dashboard
+</p>
+<br>
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/bi-2.jpg">
+  </a>		
+    <br>
+	Figure 7 : Inspection Results over Time
+</p>
+<br>
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/bi-3.jpg">
+  </a>		
+    <br>
+	Figure 8 : Critical Violations Distribution by Neighborhood
+</p>
+<br>
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/bi-4.jpg">
+  </a>		
+    <br>
+	Figure 9 : Inspection Results by Geography (Tableau Maps)
+</p>
+<br>
