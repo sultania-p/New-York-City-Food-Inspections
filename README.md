@@ -61,3 +61,30 @@ Below tools have been utilized for the various segments involving Data Profiling
   </a>
     <br>
 </p>
+
+## Data Modeling
+
+This project leverages the capability of ER/Studio Data Architect to design, visualize, and manage data models and metadata for the database. ER/Studio allowed to create conceptual, logical, and physical data models and map the relationships and dependencies between them.
+
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/stage_model.png"> 
+  </a>		
+    <br>
+	Figure 1 : New York City Food Inspection Stage Data Model
+</p>
+<br>
+
+<p align="center">  
+  <br>
+	<a href="#">
+        <img src="img/dim_model.png"> 
+  </a>		
+    <br>
+	Figure 1 : New York City Food Inspection Dimensional Data Model
+</p>
+
+## Data Integration
+
+In this project, data is analysed, profiled, transformed and loaded into Microsoft SQL server by Alteryx. Data is collected in the form of flat files (csv/tsv) and is moved to landing zones (Stage) in SQL Server.
